@@ -29,10 +29,10 @@ include "config/config_database.php";
                         <a class="nav-link" href="<?php echo base_url(); ?>">Home</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="<?php echo base_url(); ?>admin.php?target=prodi">Prodi</a>
+                        <a class="nav-link" href="<?php echo base_url(); ?>admin.php?target=atribut">Atribut</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="<?php echo base_url(); ?>admin.php?target=semester">Semester</a>
+                        <a class="nav-link" href="<?php echo base_url(); ?>admin.php?target=db_user">Semester</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="<?php echo base_url(); ?>admin.php?target=mahasiswa">Mahasiswa</a>
