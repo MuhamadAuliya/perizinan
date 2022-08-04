@@ -29,28 +29,13 @@ include "config/config_database.php";
                         <a class="nav-link" href="<?php echo base_url(); ?>">Home</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="<?php echo base_url(); ?>admin.php?target=atribut">Atribut</a>
+                        <a class="nav-link" href="<?php echo base_url(); ?>admin.php?target=prodi">Prodi</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="<?php echo base_url(); ?>admin.php?target=semester">Jabatan</a>
+                        <a class="nav-link" href="<?php echo base_url(); ?>admin.php?target=semester">Semester</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="<?php echo base_url(); ?>admin.php?target=mahasiswa">Nilai Atribut</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="<?php echo base_url(); ?>admin.php?target=mahasiswa">Pengurus</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="<?php echo base_url(); ?>admin.php?target=mahasiswa">training</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="<?php echo base_url(); ?>admin.php?target=mahasiswa">user</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="<?php echo base_url(); ?>admin.php?target=mahasiswa">daftar izin santri</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="<?php echo base_url(); ?>admin.php?target=mahasiswa">santri</a>
+                        <a class="nav-link" href="<?php echo base_url(); ?>admin.php?target=mahasiswa">Mahasiswa</a>
                     </li>
                 </ul>
             </div>

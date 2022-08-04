@@ -1,6 +1,6 @@
 <?php
 
-function __database($host = "localhost", $user = "root", $pass = "" , $db = "auldatabase")
+function __database($host = "localhost", $user = "root", $pass = "", $db = "perizinan")
 {
     $sambung = new mysqli($host, $user, $pass, $db);
     if (!$sambung) {
@@ -59,7 +59,7 @@ function __simpan($sambung, $table, $data)
 
 function __ambil($sambung, $table, $fields = null, $where = null, $join = null, $orderby = null)
 {
-    $query ="SELECT ";
+    $query = "SELECT ";
     if ($fields == null) {
         $query .= "*";
     } else {
@@ -89,7 +89,7 @@ function __ambil($sambung, $table, $fields = null, $where = null, $join = null, 
     if ($orderby != null) {
         $query .= ' ORDER BY ' . $orderby;
     }
-    
+
     // return $query;
     $data = $sambung->query($query);
 
@@ -106,7 +106,7 @@ function __delete($sambung, $table, $where)
     if (is_array($where)) {
         $query .= " WHERE ";
         foreach ($where as $k => $w) {
-            $query .= $k . "='" . $w ."'";
+            $query .= $k . "='" . $w . "'";
             if ($k != array_key_last($where)) {
                 $query .= "AND ";
             }
