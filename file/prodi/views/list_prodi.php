@@ -1,6 +1,6 @@
 <div class="card">
     <div class="card-header">
-        <h4>List Prodi</h4>
+        <h4>DB_ATRIBUT</h4>
     </div>
     <div class="card-body">
         <?php
@@ -11,25 +11,26 @@
         echo "<table class='table table-striped table-bordered'>
         <thead>
         <tr>
-            <th>no</th><th>kode prodi</th><th>nama prodi</th><th>#</th>
+            <th>ID_ATRIBUT</th><th>ID_NILAI</th><th>NAMA_ATRIBUT</th><th>#</th>
             </tr>
             </thead>
             <tbody>";
-            // ambil data dari database
-            $q = __ambil($db, "prodi");
-            $no = 1;
-            while ($r = $q->fetch_array()) {
-                echo "<tr>
+        // ambil data dari database
+        $q = __ambil($db, "db_atribut");
+        $no = 1;
+        while ($r = $q->fetch_array()) {
+            echo "<tr>
                 <td>" . $no . "</td>
-                <td>" . $r['kd_prodi'] . "</td>
-                <td>" . $r['nama_prodi'] . "</td>
+                <td>" . $r['ID_ATRIBUT'] . "</td>
+                <td>" . $r['ID_NILAI'] . "</td>
+                <td>" . $r['NAMA_ATRIBUT'] . "</td>
                 <td>
-                    <a class='btn btn-success btn-sm' href='admin.php? target=prodi&action=edit&id=" . $r['kd_prodi'] . "'>edit</a>
-                    <a class='btn btn-danger btn-sm' href='admin.php? target=prodi&action=delete&id=" . $r['kd_prodi'] . "'>hapus</a>
+                    <a class='btn btn-success btn-sm' href='admin.php? target=prodi&action=edit&id=" . $r['ID_ATRIBUT'] . "'>edit</a>
+                    <a class='btn btn-danger btn-sm' href='admin.php? target=prodi&action=delete&id=" . $r['ID_ATRIBUT'] . "'>hapus</a>
                 </td>
             </tr>";
-                $no++;
-            }
-            echo "</tbody></table></div>"; ?>
-        </div>
+            $no++;
+        }
+        echo "</tbody></table></div>"; ?>
     </div>
+</div>

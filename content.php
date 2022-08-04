@@ -9,7 +9,7 @@ if (!isset($_GET['target'])) {
                 <div class="clearfix"></div>
             </div>
             <div class="x_conten">
-                selamat  datang di aplikasi pertama, aplikasi ini di sediakan hanya untuk belajar <br>
+                selamat datang di aplikasi pertama, aplikasi ini di sediakan hanya untuk belajar <br>
                 dasar-dasar membuat aplikasi website yang di namis
                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 ip adress anda: <?php echo $_SERVER['REMOTE_ADDR']; ?>
@@ -22,10 +22,10 @@ if (!isset($_GET['target'])) {
 } else {
     $target = $_GET['target'];
     if (empty($target)) {
-        ?>
-            <script>
-                window.location.href = 'admin.php';
-            </script>
+    ?>
+        <script>
+            window.location.href = 'admin.php';
+        </script>
 <?php
     }
 
@@ -34,6 +34,5 @@ if (!isset($_GET['target'])) {
     } else {
         getcontentadmin(base_url(), $target, $_GET['action']);
     }
-
 }
 ?>
