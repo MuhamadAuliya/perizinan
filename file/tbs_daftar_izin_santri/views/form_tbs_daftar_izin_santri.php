@@ -30,10 +30,10 @@
              </div>
              <div class="mb-3">
              <label class="control-label col-md-3 col-sm-3 col-lg-12" for="frist-name">
-                     LAMA_IZIN
+                     LAMA
                  </label>
                  <div class="col-md-6 col-sm-6 col-lg-12">
-                     <input type="text" name="lama_izin" class="form-control" />
+                     <input type="text" name="lama" class="form-control" />
                  </div>
              </div>
              <div class="mb-3">

@@ -7,7 +7,7 @@ if ($opsi == "input") {
         'id_izin' => $_POST['id_izin'],
         'tanggal_izin' => $_POST['tanggal_izin'],
         'keterangan_izin' => $_POST['keterangan_izin'],
-        'lama_izin' => $_POST['lama_izin'],
+        'lama' => $_POST['lama'],
         'tujuan' => $_POST['tujuan'],
         'tanggal_kembali' => $_POST['tanggal_kembali']
     ];
@@ -28,7 +28,7 @@ elseif ($opsi == "delete") {
     $where = [
         'id_izin' => $_GET['id']
     ];
-    $delete = __delete($db, "prodi", $where);
+    $delete = __delete($db, "tbs_daftar_izin_santri", $where);
     if ($delete) {
         ?>
         <script>

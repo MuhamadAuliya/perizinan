@@ -35,10 +35,10 @@ $rows  = $query->fetch_object();
             </div>
             <div class="mb-3">
             <label class="control-label col-md-3 col-sm-3 col-lg-12" for="first-name">
-                    LAMA IZIN
+                    LAMA
                 </label>
                 <div class="col=md-6 col-sm-6 col-lg-12">
-                    <input type="text" name="lama_izin" value="<?php echo $rows->LAMA_IZIN; ?>"/>
+                    <input type="text" name="lama" value="<?php echo $rows->LAMA; ?>"/>
                 </div>
             </div>
             <div class="mb-3">

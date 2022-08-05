@@ -11,7 +11,7 @@
         echo "<table class='table table-striped table-bordered'>
         <thead>
         <tr>
-            <th>NO</th><th>ID_IZIN</th><th>TANGGAL_IZIN</th><th>KETERANGAN_IZIN</th>LAMA_IZIN<th>TUJUAN</th><th>TANGGAL_KEMBALI</th>
+            <th>NO</th><th>ID_IZIN</th><th>TANGGAL_IZIN</th><th>KETERANGAN_IZIN</th>LAMA<th>TUJUAN</th><th>TANGGAL_KEMBALI</th>
             </tr>
             </thead>
             <tbody>";
@@ -24,7 +24,7 @@
                 <td>" . $r['ID_IZIN'] . "</td>
                 <td>" . $r['TANGGAL_IZIN'] . "</td>
                 <td>" . $r['KETERANGAN_IZIN'] . "</td>
-                <td>" . $r['LAMA_IZIN'] . "</td>
+                <td>" . $r['LAMA'] . "</td>
                 <td>" . $r['TUJUAN'] . "</td>
                 <td>" . $r['TANGGAL_KEMBALI'] . "</td>
                 <td>
