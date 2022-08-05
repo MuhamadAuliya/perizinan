@@ -45,7 +45,7 @@ elseif ($opsi == "update") {
     $data = [
         'tanggal_izin' => $_POST['tanggal_izin'],
         'keterangan_izin' => $_POST['keterangan_izin'],
-        'lama_izin' => $_POST['lama_izin'],
+        'lama' => $_POST['lama'],
         'tujuan' => $_POST['tujuan'],
         'tanggal_kembali' => $_POST['tanggal_kembali']
     ];

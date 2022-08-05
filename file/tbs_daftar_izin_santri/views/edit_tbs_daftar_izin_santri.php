@@ -1,9 +1,9 @@
 <?php
 $db = __database();
 $where = [
-    'kd_prodi' => $_GET['id']
+    'id_izin' => $_GET['id']
 ];
-$query  = __ambil($db, "prodi", "*", $where);
+$query  = __ambil($db, "tbs_daftar_izin_santri", "*", $where);
 // menampilkan hasil query dalam bentuk object
 // anda bisa juga menggunakan mysql_fetch_assoc atau mysql_fetch_array dll
 
@@ -22,7 +22,7 @@ $rows  = $query->fetch_object();
                     TANGGAL IZIN
                 </label>
                 <div class="col=md-6 col-sm-6 col-lg-12">
-                    <input type="text" name="tanggal_izin" value="<?php echo $rows->TANGGAL_IZIN; ?>"/>
+                    <input type="date" name="tanggal_izin" value="<?php echo $rows->TANGGAL_IZIN; ?>"/>
                 </div>
             </div>
                 <div class="mb-3">
@@ -46,7 +46,7 @@ $rows  = $query->fetch_object();
                     TUJUAN
                 </label>
                 <div class="col=md-6 col-sm-6 col-lg-12">
-                    <input type="text" name="tujuan" value="<?php echo $rows->TUJJUAN; ?>"/>
+                    <input type="text" name="tujuan" value="<?php echo $rows->TUJUAN; ?>"/>
                 </div>
             </div>
             <div class="mb-3">
@@ -54,12 +54,12 @@ $rows  = $query->fetch_object();
                     TANGGAL KEMBALI
                 </label>
                 <div class="col=md-6 col-sm-6 col-lg-12">
-                    <input type="text" name="tanggal_kembali" value="<?php echo $rows->TANGGAL_KEMBALI; ?>"/>
+                    <input type="date" name="tanggal_kembali" value="<?php echo $rows->TANGGAL_KEMBALI; ?>"/>
                 </div>
             </div>
                     <div class="col-md-6 col-sm-6 col-lg-12">
-                        <input type="submit" class="btn btn-success btn-sm" value="simpsn">
-                        <a class="btn  btn-danger btn-sm" href="admin.php?taarget=prodi">kembali</a>
+                        <input type="submit" class="btn btn-success btn-sm" value="simpan">
+                        <a class="btn  btn-danger btn-sm" href="admin.php?taarget=tbs_daftar_izin_santri">kembali</a>
                     </div>
                 </div>
             </form>
