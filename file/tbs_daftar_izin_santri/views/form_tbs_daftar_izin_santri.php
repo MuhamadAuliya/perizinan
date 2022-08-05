@@ -17,7 +17,7 @@
                      TANGGAL_IZIN
                  </label>
                  <div class="col-md-6 col-sm-6 col-lg-12">
-                     <input type="text" name="tanggal_izin" class="form-control" />
+                     <input type="date" name="tanggal_izin" class="form-control" />
                  </div>
              </div>
              <div class="mb-3">
@@ -49,7 +49,7 @@
                      TANGGAL_KEMBALI
                  </label>
                  <div class="col-md-6 col-sm-6 col-lg-12">
-                     <input type="text" name="tanggal_kembali" class="form-control" />
+                     <input type="date" name="tanggal_kembali" class="form-control" />
                  </div>
              </div>
                  <div class="col-md-6 col-sm-6 col-lg-12">
