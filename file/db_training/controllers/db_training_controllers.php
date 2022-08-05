@@ -4,16 +4,19 @@ $opsi = $_GET['action'];
 // start input
 if ($opsi == "input") {
     $data = [
-        'id_user' => $_POST['id_user'],
-        'username' => $_POST['username'],
-        'password' => $_POST['password'],
-        'jabatan' => $_POST['jabatan']
+        'id_training' => $_POST['id_training'],
+        'id_atribut' => $_POST['id_atribut'],
+        'jenis_izin' => $_POST['jenis_izin'],
+        'jarak_izin' => $_POST['jarak_izin'],
+        'jumlah_izin' => $_POST['jumlah_izin'],
+        'status_santri' => $_POST['status_santri'],
+        'beri_izin' => $_POST['beri_izin']
     ];
-    $simpan = __simpan($db, "db_user", $data);
+    $simpan = __simpan($db, "db_training", $data);
     if ($simpan) {
-        ?>
+?>
         <script>
-            window.location.href = 'admin.php?target=db_user';
+            window.location.href = 'admin.php?target=db_training';
         </script>
     <?php
     } else {
@@ -24,13 +27,13 @@ if ($opsi == "input") {
 // start  kondisi delete
 elseif ($opsi == "delete") {
     $where = [
-        'id_user' => $_GET['id']
+        'id_training' => $_GET['id']
     ];
-    $delete = __delete($db, "db_user", $where);
+    $delete = __delete($db, "db_training", $where);
     if ($delete) {
-        ?>
+    ?>
         <script>
-            window.location.href ='admin.php?target=db_user';
+            window.location.href = 'admin.php?target=db_training';
         </script>
     <?php
     } else {
@@ -41,20 +44,25 @@ elseif ($opsi == "delete") {
 // start kondisi update
 elseif ($opsi == "update") {
     $data = [
-        'username' => $_POST['username'],
-        'password' => $_POST['password'],
-        'jabatan' => $_POST['jabatan']
+        'id_training' => $_POST['id_training'],
+        'id_atribut' => $_POST['id_atribut'],
+        'jenis_izin' => $_POST['jenis_izin'],
+        'jarak_izin' => $_POST['jarak_izin'],
+        'lama_izin' => $_POST['lama_izin'],
+        'jumlah_izin' => $_POST['jumlah_izin'],
+        'status_santri' => $_POST['status_santri'],
+        'beri_izin' => $_POST['beri_izin']
     ];
     $where = [
-        'id_user' => $_POST['id']
+        'id_training' => $_POST['id']
     ];
-    $update = __update($db, "db_user", $data, $where);
+    $update = __update($db, "db_training", $data, $where);
     if ($update) {
-        ?>
+    ?>
         <script>
-            window.location.href = 'admin.php?target=db_user';
+            window.location.href = 'admin.php?target=db_training';
         </script>
-    <?php
+<?php
     } else {
         echo "gagal update" . $db->error;
     }

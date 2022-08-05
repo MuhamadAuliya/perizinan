@@ -11,10 +11,15 @@
         echo "<table class='table table-striped table-bordered'>
         <thead>
         <tr>
-            <th>ID_TRAINING</th><th>ID_ATRIBUT</th><th>JENIS_IZIN</th><th>JARAK_IZIN</th><th>LAMA_IZIN</th>
+            <th>ID_TRAINING</th>
+            <th>ID_ATRIBUT</th>
+            <th>JENIS_IZIN</th>
+            <th>JARAK_IZIN</th>
+            <th>LAMA_IZIN</th>
+            <th>JUMLAH_IZIN</th>
             <th>JUMLAH_IZIN</th>
             <th>STATUS_SANTRI</th>
-            <th>BERI_IZIN</th>
+            <th>STATUS_SANTRI</th>
             <th>ACTION</th>
             </tr>
             </thead>
@@ -28,12 +33,14 @@
                 <td>" . $r['ID_TRAINING'] . "</td>
                 <td>" . $r['ID_ATRIBUT'] . "</td>
                 <td>" . $r['JENIS_IZIN'] . "</td>
+                <td>" . $r['JARAK_IZIN'] . "</td>
                 <td>" . $r['LAMA_IZIN'] . "</td>
+                <td>" . $r['JUMLAH_IZIN'] . "</td>
                 <td>" . $r['STATUS_SANTRI'] . "</td>
                 <td>" . $r['BERI_IZIN'] . "</td>
                 <td>
-                    <a class='btn btn-success btn-sm' href='admin.php? target=db_user&action=edit&id=" . $r['ID_TRAINING'] . "'>edit</a>
-                    <a class='btn btn-danger btn-sm' href='admin.php? target=db_user&action=delete&id=" . $r['ID_TRAINING'] . "'>hapus</a>
+                    <a class='btn btn-success btn-sm' href='admin.php? target=db_training&action=edit&id=" . $r['ID_TRAINING'] . "'>edit</a>
+                    <a class='btn btn-danger btn-sm' href='admin.php? target=db_training&action=delete&id=" . $r['ID_TRAINING'] . "'>hapus</a>
                 </td>
             </tr>";
             $no++;

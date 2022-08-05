@@ -1,9 +1,9 @@
 <?php
 $db = __database();
 $where = [
-    'id_user' => $_GET['id']
+    'id_training' => $_GET['id']
 ];
-$query  = __ambil($db, "db_user", "*", $where);
+$query  = __ambil($db, "db_training", "*", $where);
 // menampilkan hasil query dalam bentuk object
 // anda bisa juga menggunakan mysql_fetch_assoc atau mysql_fetch_array dll
 
@@ -12,41 +12,81 @@ $rows  = $query->fetch_object();
 ?>
 <div class="card">
     <div class="card-header">
-        <h4>edit  member</h4>
+        <h4>edit training</h4>
     </div>
     <div class="card-body">
-        <form method="post" action="admin.php?target=db_user&action=update" data-parsley-validate class="form-horizontal form-label-left">
-            <input type="hidden" name="id" value="<?php echo $rows->ID_USER; ?>">
+        <form method="post" action="admin.php?target=db_training&action=update" data-parsley-validate class="form-horizontal form-label-left">
+            <input type="hidden" name="id" value="<?php echo $rows->ID_TRAINING; ?>">
             <div class="mb-3">
-                 <label class="control=label col-md-3 col-sm-3 col-lg-12" for="first-name">
-                     USERNAME
-                 </label>
-                 <div class="col-md-6 col-sm-6 col-lg-12">
-                     <input type="text" name="username" id="username" class="form-control" value="<?php echo $rows->USERNAME;?>" />
-                 </div>
-             </div>
-             <div class="mb-3">
-                 <label class="control=label col-md-3 col-sm-3 col-lg-12" for="first-name">
-                     PASSWORD
-                 </label>
-                 <div class="col-md-6 col-sm-6 col-lg-12">
-                     <input type="text" name="password" id="password" class="form-control" value="<?php echo $rows->PASSWORD;?>" />
-                 </div>
-             </div>
-             <div class="mb-3">
-                 <label class="control=label col-md-3 col-sm-3 col-lg-12" for="first-name">
-                     JABATAN
-                 </label>
-                 <div class="col-md-6 col-sm-6 col-lg-12">
-                     <input type="text" name="jabatan" id="jabatan" class="control-label col-md-3 col-sm-3 col-lg-12" value="<?php echo $rows->JABATAN;?>" />
-                 </div>
-             </div>
-                <div class="mb-3">
-                    <div class="col-md-6 col-sm-6 col-lg-12">
-                        <input type="submit" class="btn btn-success btn-sm" value="simpan">
-                        <a class="btn  btn-danger btn-sm" href="admin.php?taarget=prodi">kembali</a>
-                    </div>
+                <label class="control=label col-md-3 col-sm-3 col-lg-12" for="first-name">
+                    ID TRAINING
+                </label>
+                <div class="col-md-6 col-sm-6 col-lg-12">
+                    <input type="text" name="id_training" id="id_training" class="form-control" value="<?php echo $rows->ID_TRAINING; ?>" readonly />
                 </div>
-            </form>
-        </div>
+            </div>
+            <div class="mb-3">
+                <label class="control=label col-md-3 col-sm-3 col-lg-12" for="first-name">
+                    ID_ATRIBUT
+                </label>
+                <div class="col-md-6 col-sm-6 col-lg-12">
+                    <input type="text" name="id_atribut" id="id_atribut" class="form-control" value="<?php echo $rows->ID_ATRIBUT; ?>" />
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="control=label col-md-3 col-sm-3 col-lg-12" for="first-name">
+                    JENIS_IZIN
+                </label>
+                <div class="col-md-6 col-sm-6 col-lg-12">
+                    <input type="text" name="jenis_izin" id="jenis_izin" class="control-label col-md-3 col-sm-3 col-lg-12" value="<?php echo $rows->JENIS_IZIN; ?>" />
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="control=label col-md-3 col-sm-3 col-lg-12" for="first-name">
+                    JARAK_IZIN
+                </label>
+                <div class="col-md-6 col-sm-6 col-lg-12">
+                    <input type="text" name="jarak_izin" id="jarak_izin" class="control-label col-md-3 col-sm-3 col-lg-12" value="<?php echo $rows->JARAK_IZIN; ?>" />
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="control=label col-md-3 col-sm-3 col-lg-12" for="first-name">
+                    LAMA_IZIN
+                </label>
+                <div class="col-md-6 col-sm-6 col-lg-12">
+                    <input type="text" name="lama_izin" id="lama_izin" class="control-label col-md-3 col-sm-3 col-lg-12" value="<?php echo $rows->LAMA_IZIN; ?>" />
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="control=label col-md-3 col-sm-3 col-lg-12" for="first-name">
+                    JUMLAH_IZIN
+                </label>
+                <div class="col-md-6 col-sm-6 col-lg-12">
+                    <input type="text" name="jumlah_izin" id="jumlah_izin" class="control-label col-md-3 col-sm-3 col-lg-12" value="<?php echo $rows->JUMLAH_IZIN; ?>" />
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="control=label col-md-3 col-sm-3 col-lg-12" for="first-name">
+                    STATUS_SANTRI
+                </label>
+                <div class="col-md-6 col-sm-6 col-lg-12">
+                    <input type="text" name="status_santri" id="status_santri" class="control-label col-md-3 col-sm-3 col-lg-12" value="<?php echo $rows->STATUS_SANTRI; ?>" />
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="control=label col-md-3 col-sm-3 col-lg-12" for="first-name">
+                    BERI_IZIN
+                </label>
+                <div class="col-md-6 col-sm-6 col-lg-12">
+                    <input type="text" name="beri_izin" id="beri_izin" class="control-label col-md-3 col-sm-3 col-lg-12" value="<?php echo $rows->BERI_IZIN; ?>" />
+                </div>
+            </div>
+            <div class="mb-3">
+                <div class="col-md-6 col-sm-6 col-lg-12">
+                    <input type="submit" class="btn btn-success btn-sm" value="simpan">
+                    <a class="btn  btn-danger btn-sm" href="admin.php?taarget=prodi">kembali</a>
+                </div>
+            </div>
+        </form>
     </div>
+</div>
