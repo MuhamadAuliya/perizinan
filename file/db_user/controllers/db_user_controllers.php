@@ -4,14 +4,16 @@ $opsi = $_GET['action'];
 // start input
 if ($opsi == "input") {
     $data = [
-        'kd_prodi' => $_POST['kd_prodi'],
-        'nama_prodi' => $_POST['nama_prodi']
+        'id_user' => $_POST['id_user'],
+        'username' => $_POST['username'],
+        'password' => $_POST['password'],
+        'jabatan' => $_POST['jabatan']
     ];
-    $simpan = __simpan($db, "prodi", $data);
+    $simpan = __simpan($db, "db_user", $data);
     if ($simpan) {
         ?>
         <script>
-            window.location.href = 'admin.php?target=prodi';
+            window.location.href = 'admin.php?target=db_user';
         </script>
     <?php
     } else {
@@ -22,13 +24,13 @@ if ($opsi == "input") {
 // start  kondisi delete
 elseif ($opsi == "delete") {
     $where = [
-        'kd_prodi' => $_GET['id']
+        'id_user' => $_GET['id']
     ];
-    $delete = __delete($db, "prodi", $where);
+    $delete = __delete($db, "db_user", $where);
     if ($delete) {
         ?>
         <script>
-            window.location.href ='admin.php?target=prodi';
+            window.location.href ='admin.php?target=db_user';
         </script>
     <?php
     } else {
@@ -39,16 +41,18 @@ elseif ($opsi == "delete") {
 // start kondisi update
 elseif ($opsi == "update") {
     $data = [
-        'nama_prodi' => $_POST['nama_prodi']
+        'username' => $_POST['username'],
+        'password' => $_POST['password'],
+        'jabatan' => $_POST['jabatan']
     ];
     $where = [
-        'kd_prodi' => $_POST['id']
+        'id_user' => $_POST['id']
     ];
-    $update = __update($db, "prodi", $data, $where);
+    $update = __update($db, "db_user", $data, $where);
     if ($update) {
         ?>
         <script>
-            window.location.href = 'admin.php?target=prodi';
+            window.location.href = 'admin.php?target=db_user';
         </script>
     <?php
     } else {

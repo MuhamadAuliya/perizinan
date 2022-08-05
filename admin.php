@@ -32,10 +32,19 @@ include "config/config_database.php";
                         <a class="nav-link" href="<?php echo base_url(); ?>admin.php?target=atribut">Atribut</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="<?php echo base_url(); ?>admin.php?target=db_user">Semester</a>
+                        <a class="nav-link" href="<?php echo base_url(); ?>admin.php?target=db_user">User</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="<?php echo base_url(); ?>admin.php?target=mahasiswa">Mahasiswa</a>
+                        <a class="nav-link" href="<?php echo base_url(); ?>admin.php?target=tbs_daftar_izin_santri">Prediksi Izin</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="<?php echo base_url(); ?>admin.php?target=tbs_daftar_izin_santri">Prediksi Izin</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="<?php echo base_url(); ?>admin.php?target=tbs_daftar_izin_santri">Prediksi Izin</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="<?php echo base_url(); ?>admin.php?target=tbs_daftar_izin_santri">Prediksi Izin</a>
                     </li>
                 </ul>
             </div>
