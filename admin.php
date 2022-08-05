@@ -35,7 +35,7 @@ include "config/config_database.php";
                         <a class="nav-link" href="<?php echo base_url(); ?>admin.php?target=db_user">User</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="<?php echo base_url(); ?>admin.php?target=tbs_daftar_izin_santri">Prediksi Izin</a>
+                        <a class="nav-link" href="<?php echo base_url(); ?>admin.php?target=db_training">Training</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="<?php echo base_url(); ?>admin.php?target=tbs_daftar_izin_santri">Prediksi Izin</a>
