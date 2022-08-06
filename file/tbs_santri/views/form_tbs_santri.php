@@ -1,60 +1,53 @@
  <div class="card">
      <div class="card-header">
-         <h4>From Izin Santri</h4>
+         <h4>Atribut</h4>
      </div>
      <div class="card-body">
-         <form method="post" action="admin.php?target=tbs_daftar_izin_santri&action=input" data-parsley-validate class="form-horizontal form-label-left">
+         <form method="post" action="admin.php?target=tbs_santri&action=input" data-parsley-validate class="form-horizontal form-label-left">
              <div class="mb-3">
                  <label class="control=label col-md-3 col-sm-3 col-lg-12" for="first-name">
-                     ID_IZIN
+                     NIS
                  </label>
                  <div class="col-md-6 col-sm-6 col-lg-12">
-                     <input type="text" name="id_izin" class="form-control" />
+                     <input type="text" name="nis" class="form-control" />
                  </div>
              </div>
              <div class="mb-3">
                  <label class="control-label col-md-3 col-sm-3 col-lg-12" for="frist-name">
-                     TANGGAL_IZIN
+                     NAMA
                  </label>
                  <div class="col-md-6 col-sm-6 col-lg-12">
-                     <input type="date" name="tanggal_izin" class="form-control" />
+                     <input type="text" name="nama" class="form-control" />
                  </div>
              </div>
              <div class="mb-3">
                  <label class="control-label col-md-3 col-sm-3 col-lg-12" for="frist-name">
-                     KETERANGAN_IZIN
+                     JENIS_KELAMIN
                  </label>
                  <div class="col-md-6 col-sm-6 col-lg-12">
-                     <input type="text" name="keterangan_izin" class="form-control" />
+                     <input type="text" name="jenis_kelamin" class="form-control" />
                  </div>
              </div>
              <div class="mb-3">
              <label class="control-label col-md-3 col-sm-3 col-lg-12" for="frist-name">
-                     LAMA
+                     TANGGAL_LAHIR
                  </label>
                  <div class="col-md-6 col-sm-6 col-lg-12">
-                     <input type="text" name="lama" class="form-control" />
+                     <input type="date" name="tanggal_lahir" class="form-control" />
                  </div>
              </div>
              <div class="mb-3">
              <label class="control-label col-md-3 col-sm-3 col-lg-12" for="frist-name">
-                     TUJUAN
+                     ASRAMA
                  </label>
                  <div class="col-md-6 col-sm-6 col-lg-12">
-                     <input type="text" name="tujuan" class="form-control" />
+                     <input type="text" name="asrama" class="form-control" />
                  </div>
              </div>
              <div class="mb-3">
-             <label class="control-label col-md-3 col-sm-3 col-lg-12" for="frist-name">
-                     TANGGAL_KEMBALI
-                 </label>
-                 <div class="col-md-6 col-sm-6 col-lg-12">
-                     <input type="date" name="tanggal_kembali" class="form-control" />
-                 </div>
-             </div>
                  <div class="col-md-6 col-sm-6 col-lg-12">
                      <input type="submit" class="btn btn-success" value="simpan">
-                     <a class="btn btn-danger btn-sm" href="admin.php?target=tbs_daftar_izin_santri">kembali</a>
+                     <a class="btn btn-danger btn-sm" href="admin.php? target=tbs_santri">kembali</a>
                  </div>
              </div>
          </form>
