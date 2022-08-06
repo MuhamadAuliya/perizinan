@@ -11,7 +11,7 @@
         echo "<table class='table table-striped table-bordered'>
         <thead>
         <tr>
-            <th>NO</th><th>ID_IZIN</th><th>TANGGAL_IZIN</th><th>KETERANGAN_IZIN</th><th>LAMA</th><th>TUJUAN</th><th>TANGGAL_KEMBALI</th>
+            <th>NO</th><th>ID_IZIN</th><th>NIS</th><th>ID_TIM</th><th>TANGGAL_IZIN</th><th>KETERANGAN_IZIN</th><th>LAMA</th><th>TUJUAN</th><th>TANGGAL_KEMBALI</th><th>TIM_PERIZINAN</th>
             </tr>
             </thead>
             <tbody>";
@@ -22,11 +22,14 @@
             echo "<tr>
                 <td>" . $no . "</td>
                 <td>" . $r['ID_IZIN'] . "</td>
+                <td>" . $r['NIS'] . "</td>
+                <td>" . $r['ID_TIM'] . "</td>
                 <td>" . $r['TANGGAL_IZIN'] . "</td>
                 <td>" . $r['KETERANGAN_IZIN'] . "</td>
                 <td>" . $r['LAMA'] . "</td>
                 <td>" . $r['TUJUAN'] . "</td>
                 <td>" . $r['TANGGAL_KEMBALI'] . "</td>
+                <td>" . $r['TIM_PERIZINAN'] . "</td>
                 <td>
                     <a class='btn btn-success btn-sm' href='admin.php? target=tbs_daftar_izin_santri&action=edit&id=" . $r['ID_IZIN'] . "'>edit</a>
                     <a class='btn btn-danger btn-sm' href='admin.php? target=tbs_daftar_izin_santri&action=delete&id=" . $r['ID_IZIN'] . "'>hapus</a>

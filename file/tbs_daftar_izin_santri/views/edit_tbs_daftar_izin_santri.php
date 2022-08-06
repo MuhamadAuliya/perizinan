@@ -18,6 +18,22 @@ $rows  = $query->fetch_object();
         <form method="post" action="admin.php?target=tbs_daftar_izin_santri&action=update" data-parsley-validate class="form-horizontal form-label-left">
             <input type="hidden" name="id" value="<?php echo $rows->ID_IZIN; ?>">
             <div class="mb-3">
+            <label class="control-label col-md-3 col-sm-3 col-lg-12" for="first-name">
+                    NIS
+                </label>
+                <div class="col=md-6 col-sm-6 col-lg-12">
+                    <input type="text" name="nis" value="<?php echo $rows->NIS; ?>"/>
+                </div>
+            </div>
+                <div class="mb-3">
+                <label class="control-label col-md-3 col-sm-3 col-lg-12" for="first-name">
+                    ID TIM
+                </label>
+                <div class="col=md-6 col-sm-6 col-lg-12">
+                    <input type="text" name="id_tim" value="<?php echo $rows->ID_TIM; ?>"/>
+                </div>
+            </div>
+                <div class="mb-3">
                 <label class="control-label col-md-3 col-sm-3 col-lg-12" for="first-name">
                     TANGGAL IZIN
                 </label>
@@ -55,6 +71,14 @@ $rows  = $query->fetch_object();
                 </label>
                 <div class="col=md-6 col-sm-6 col-lg-12">
                     <input type="date" name="tanggal_kembali" value="<?php echo $rows->TANGGAL_KEMBALI; ?>"/>
+                </div>
+            </div>
+            <div class="mb-3">
+            <label class="control-label col-md-3 col-sm-3 col-lg-12" for="first-name">
+                    TIM PERIZINAN
+                </label>
+                <div class="col=md-6 col-sm-6 col-lg-12">
+                    <input type="text" name="tim_perizinan" value="<?php echo $rows->TIM_PERIZINAN; ?>"/>
                 </div>
             </div>
                     <div class="col-md-6 col-sm-6 col-lg-12">

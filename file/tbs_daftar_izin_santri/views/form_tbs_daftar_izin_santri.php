@@ -13,6 +13,22 @@
                  </div>
              </div>
              <div class="mb-3">
+             <label class="control=label col-md-3 col-sm-3 col-lg-12" for="first-name">
+                     NIS
+                 </label>
+                 <div class="col-md-6 col-sm-6 col-lg-12">
+                     <input type="text" name="nis" class="form-control" />
+                 </div>
+             </div>
+             <div class="mb-3">
+             <label class="control=label col-md-3 col-sm-3 col-lg-12" for="first-name">
+                     ID_TIM
+                 </label>
+                 <div class="col-md-6 col-sm-6 col-lg-12">
+                     <input type="text" name="id_tim" class="form-control" />
+                 </div>
+             </div>
+             <div class="mb-3">
                  <label class="control-label col-md-3 col-sm-3 col-lg-12" for="frist-name">
                      TANGGAL_IZIN
                  </label>
@@ -50,6 +66,14 @@
                  </label>
                  <div class="col-md-6 col-sm-6 col-lg-12">
                      <input type="date" name="tanggal_kembali" class="form-control" />
+                 </div>
+             </div>
+             <div class="mb-3">
+             <label class="control-label col-md-3 col-sm-3 col-lg-12" for="frist-name">
+                     TIM_PERIZINAN
+                 </label>
+                 <div class="col-md-6 col-sm-6 col-lg-12">
+                     <input type="text" name="tim_perizinan" class="form-control" />
                  </div>
              </div>
                  <div class="col-md-6 col-sm-6 col-lg-12">

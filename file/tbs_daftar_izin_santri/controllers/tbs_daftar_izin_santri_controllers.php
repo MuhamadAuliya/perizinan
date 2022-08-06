@@ -5,11 +5,14 @@ $opsi = $_GET['action'];
 if ($opsi == "input") {
     $data = [
         'id_izin' => $_POST['id_izin'],
+        'nis' => $_POST['nis'],
+        'id_tim' => $_POST['id_tim'],
         'tanggal_izin' => $_POST['tanggal_izin'],
         'keterangan_izin' => $_POST['keterangan_izin'],
         'lama' => $_POST['lama'],
         'tujuan' => $_POST['tujuan'],
-        'tanggal_kembali' => $_POST['tanggal_kembali']
+        'tanggal_kembali' => $_POST['tanggal_kembali'],
+        'tim_perizinan' => $_POST['tim_perizinan']
     ];
     $simpan = __simpan($db, "tbs_daftar_izin_santri", $data);
     if ($simpan) {
@@ -43,11 +46,14 @@ elseif ($opsi == "delete") {
 // start kondisi update
 elseif ($opsi == "update") {
     $data = [
+        'nis' => $_POST['nis'],
+        'id_tim' => $_POST['id_tim'],
         'tanggal_izin' => $_POST['tanggal_izin'],
         'keterangan_izin' => $_POST['keterangan_izin'],
         'lama' => $_POST['lama'],
         'tujuan' => $_POST['tujuan'],
-        'tanggal_kembali' => $_POST['tanggal_kembali']
+        'tanggal_kembali' => $_POST['tanggal_kembali'],
+        'tim_perizinan' => $_POST['tim_perizinan']
     ];
     $where = [
         'id_izin' => $_POST['id']
