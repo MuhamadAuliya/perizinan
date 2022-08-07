@@ -9,9 +9,10 @@ if (!isset($_GET['target'])) {
                 <div class="clearfix"></div>
             </div>
             <div class="x_conten">
-                selamat datang di aplikasi pertama, aplikasi ini di sediakan hanya untuk belajar <br>
-                dasar-dasar membuat aplikasi website yang di namis
+                Selamat Datang Di Sistem Pembantu Keputusan Perizinan Santri
+                Ponpes Salafiyah Syafiiyah Sukorejo
                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <img src="" alt="">
                 ip adress anda: <?php echo $_SERVER['REMOTE_ADDR']; ?>
                 <br>
                 tanggal: <?php echo date("d/m/y"); ?>
