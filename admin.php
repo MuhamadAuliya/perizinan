@@ -29,7 +29,7 @@ include "config/config_database.php";
                         <a class="nav-link" href="<?php echo base_url(); ?>">Home</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="<?php echo base_url(); ?>admin.php?target=atribut">Atribut</a>
+                        <a class="nav-link" href="<?php echo base_url(); ?>admin.php?target=db_atribut">Atribut</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="<?php echo base_url(); ?>admin.php?target=db_user">User</a>
@@ -39,9 +39,6 @@ include "config/config_database.php";
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="<?php echo base_url(); ?>admin.php?target=tbs_santri">tbs santri</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="<?php echo base_url(); ?>admin.php?target=tbs_dafta">Prediksi Izin</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="<?php echo base_url(); ?>admin.php?target=tbs_daftar_izin_santri">Prediksi Izin</a>
